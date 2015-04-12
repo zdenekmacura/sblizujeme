@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="css/sblizujeme.css" />
+   </head>
+   <body class="ScrollView">
+      <div class="MainBackground">
+         <img class="HeadImg" src="./img/sblizujeme2.png"/ border="2px">
+         <div class="TextView">Vítejte, u nás se můžete osobně setkat se zajímavými lidmi. Najít přátele, lásku. Stačí udělat tři kroky:</div>
+         <div class="StepsBackground">
+            <div class="TextViewStep" id="ShowCreateProfile">Krok 1 - Vytvoř profil</div>
+            <div class="StepCreateProfile" id="CreateProfile">
+                  
+
+            <form class="RegistrationForm" method="post" id="profileForm">
+
+            <label  for="form-registration-form-login">Email (jako Login)<span>*</span></label>
+            <div id="message_post"></div>
+            <div class="controls">
+            <input type="text"  id="form-registration-form-login" name="email_profile" value="" />
+            
+            <label  for="form-registration-form-sex">Pohlaví <span>*</span> </label>
+            <select  id="form-registration-form-sex" name="data[sex]">
+                <option value="0" >vyberte</option><option value="M" >muž</option>
+                <option value="Z" >žena</option>
+            </select>
+            
+            <label  for="form-registration-form-password">Heslo <span>*</span> </label>
+            <input type="password"  autocomplete="off" id="form-registration-form-password" name="password" value="" />
+            <label  for="form-registration-form-password_checker">Kontrola hesla <span>*</span> </label>
+            <input type="password"  autocomplete="off" id="form-registration-form-password_checker" name="password_checker" >
+            
+            <label  for="form-registration-form-phone">Mobilní číslo <span>*</span> </label>
+            <input type="text" disabled class="beforePhone" value="+420" size="5">
+            <input type="text"  id="form-registration-form-phone" name="phone" value="" />
+
+
+            <input type="submit"  name="submit" value="Vytvořit" id="sendProfile"/>
+        </form> 
+
+        </div>
+        </div>
+        </div>
+
+
+      <div class="TextViewSmaller">Designed and developed by Zdeněk Macura ( zdenek.macura@email.cz )</div>
+      </div>
+  
+   
+   <script src="cordova.js"></script>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/sblizujeme.js"></script>
+
+   </body>
+
+</html>
