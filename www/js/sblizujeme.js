@@ -17,7 +17,7 @@ $(document).ready(function(){
 	$("#ShowCreateProfile").click(function(){
 		if ($(".StepCreateProfile").css('height') == '0px' ) {
 			$('.StepCreateProfile').animate({"height": "100%"}, 800);
-			$('.StepsBackground').animate({"width": "80%"}, 800);
+			$('.StepsBackground').animate({"width": "95%"}, 800);
 			$("#CreateProfile").show();
 		} else {
 			$('.StepsBackground').animate({"width": "55%"}, 800);
