@@ -7,13 +7,13 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Contact Picker for Stop Domestic Violence</name>
+    <name>Sbližujeme - Rychlé rande</name>
 
     <description>
-        Stop Domectic Violence - application which should help the victims of the domestic violence to understand and resist the various types of violence 
+        Sbližujeme - Rychlé rande
     </description>
 
-    <author href="http://www.zenyprotinasilnikum.cz" email="zdenek.macura@email.cz">
+    <author href="http://www.sblizujeme.cz" email="zdenek.macura@email.cz">
         Zdenek Macura
     </author>
     <gap:plugin name="org.apache.cordova.contacts" version="0.2.13" />

@@ -15,7 +15,17 @@ $(document).ready(function(){
     });
 
 	$("#ShowCreateProfile").click(function(){
-    	$("#CreateProfile").toggle(300);
+		if ($(".StepCreateProfile").css('height') == '0px' ) {
+			$('.StepCreateProfile').animate({"height": "100%"}, 800);
+			$('.StepsBackground').animate({"width": "80%"}, 800);
+			$("#CreateProfile").show();
+		} else {
+			$('.StepsBackground').animate({"width": "55%"}, 800);
+			$('.StepCreateProfile').animate({"height": "0px"}, 500);
+			$("#CreateProfile").toggle(100);
+		}
+    	//$("#CreateProfile").toggle(300);
+    	
 	});
 
 	//$("#sendProfile").click(function(){

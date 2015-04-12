@@ -106,7 +106,7 @@ body {
 	margin: 5px;
 	border-radius: 10.0px 10.0px 10.0px 10.0px;
 	border: 1px solid red;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	width: 55%;
 	margin-top: 1em;
 	margin-left: auto ;
@@ -150,7 +150,7 @@ body {
 	border-width: 2px;
 	border-color: lightsteelblue;
 	width: 40%;
-	margin-top: 2cm;
+	margin-top: 1em;
 	margin-left: 3% ;
 	margin-right: auto ;
 	border-radius: 10.0px 10.0px 10.0px 10.0px;
@@ -164,9 +164,10 @@ body {
 	border-radius: 10.0px 10.0px 10.0px 10.0px;
 	padding: 5px;
 	width: 90%;
+	height: 0px;
 	display: none;
 	color:rgb(128,0,0);
-	font-size: 15px;
+	font-size: 1em;
 	margin-left: auto;
   	margin-right: auto ;
 }
@@ -187,30 +188,6 @@ body {
   	width: 35%;
 }
 
-.InputField {
-	display: none;
-	margin: 10px;
-}
-.InputText {
-	width: 90%;
-	background-color: yellow;
-	font-size: 16px;
-	height: 7em;
-	margin: 5px;
-	padding: 5px;
-	border-radius: 10.0px 10.0px 10.0px 10.0px;
-	border: 2px solid red;
-}
-
-
-.Buttons {
-	height: 30px;
-	margin: 7px;
-	font-size: 16px;
-	border-radius: 10.0px 10.0px 10.0px 10.0px;
-
-}
-
 span {
 	font-size: 19px;
 	margin: 5px;
@@ -218,5 +195,7 @@ span {
 
 }
 label {
-	display: block;
+	display: inline-block;
+	font-size: 1em;
+
 }

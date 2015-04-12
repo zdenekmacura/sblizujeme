@@ -15,29 +15,37 @@
                   
 
             <form class="RegistrationForm" method="post" id="profileForm">
-
-            <label  for="form-registration-form-login">Email (jako Login)<span>*</span></label>
+             <table>
+             <tr><td> 
+            <label  for="form-registration-form-login">Email (Login)<span>*</span></label>
             <div id="message_post"></div>
-            <div class="controls">
+            </td><td>
             <input type="text"  maxlength="10" name="email_profile" value="" />
-            
+            </td></tr>
+            <tr><td>
             <label  for="form-registration-form-sex">Pohlaví <span>*</span> </label>
+            </td><td>
             <select  id="form-registration-form-sex" name="data[sex]">
                 <option value="0" >vyberte</option><option value="M" >muž</option>
                 <option value="Z" >žena</option>
             </select>
-            
+            </td></tr>
+            <tr><td>
             <label  for="form-registration-form-password">Heslo <span>*</span> </label>
+            </td><td>
             <input type="password"  autocomplete="off" id="form-registration-form-password" name="password" value="" />
+            </td></tr>
+            <tr><td>
             <label  for="form-registration-form-password_checker">Kontrola hesla <span>*</span> </label>
+            </td><td>
             <input type="password"  autocomplete="off" id="form-registration-form-password_checker" name="password_checker" >
-            
+            </td></tr>
+            <tr><td>
             <label  for="form-registration-form-phone">Mobilní číslo <span>*</span> </label>
-            <input type="text" disabled class="beforePhone" value="+420" size="5">
-            <input type="text"  name="phone" value="" />
-
-
-            <input type="submit"  name="submit" value="Vytvořit" id="sendProfile"/>
+            </td><td><input type="text" disabled class="beforePhone" value="+420" size="4">
+            <input type="text"  name="phone" value="" /></td></tr>
+            <tr><td><input type="submit"  name="submit" value="Vytvořit" id="sendProfile"/>
+            </td></tr></table>
         </form> 
 
         </div>
