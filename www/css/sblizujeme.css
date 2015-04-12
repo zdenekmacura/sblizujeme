@@ -27,7 +27,7 @@
 	margin: 10px;
 	border: 1px solid red;
 	font-size: 15px;
-	width: 50%;
+	width: 55%;
 	margin-top: 1cm;
 	margin-left: auto ;
   	margin-right: 2% ;
@@ -41,10 +41,11 @@
 	/*background-position: 50%; */
 	background-position: left top;
     background-size:cover;
-    min-width:400px;
-    min-height: 800px;
+    width:auto;
+    max-width: 500px;
+    min-height: 700px;
+    height: auto;
     margin: 0 auto;
-  	max-width: 500px;
 	border: 0px solid black;
 	display: block;
 	margin: 2px;
@@ -75,7 +76,7 @@
 	border-radius: 10.0px 10.0px 10.0px 10.0px;
 	border: 1px solid red;
 	font-size: 15px;
-	width: 50%;
+	width: 55%;
 	margin-top: 1cm;
 	margin-left: auto ;
   	margin-right: 2% ;
@@ -148,7 +149,7 @@
 	border-radius: 10.0px 10.0px 10.0px 10.0px;
 	border: 1px solid red;
 	font-size: 12px;
-	margin-bottom: 4px;
+	margin-bottom: 40px;
 	margin-top: 1cm;
 	margin-left: auto ;
   	margin-right: 20% ;
