@@ -17,12 +17,17 @@ $(document).ready(function(){
 	$("#ShowCreateProfile").click(function(){
 		if ($(".StepCreateProfile").css('height') == '0px' ) {
 			$('.StepCreateProfile').animate({"height": "100%"}, 800);
-			$('.StepsBackground').animate({"width": "95%"}, 800);
+			$('.StepsBackground').animate({"margin-left": "2%"}, 800);
+			$('.StepsBackground').animate({"width": "96%"}, 800);
 			$("#CreateProfile").show();
 		} else {
+
+			/*$('.StepsBackground').animate({"width": "55%"}, 800);*/
 			$('.StepsBackground').animate({"width": "55%"}, 800);
+			$('.StepsBackground').css("margin-left","auto");
+			$('.StepsBackground').animate({"margin-right": "2%"}, 800);
 			$('.StepCreateProfile').animate({"height": "0px"}, 500);
-			$("#CreateProfile").toggle(100);
+			$("#CreateProfile").hide();
 		}
     	//$("#CreateProfile").toggle(300);
     	

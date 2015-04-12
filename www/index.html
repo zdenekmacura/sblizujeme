@@ -8,18 +8,19 @@
    <body class="ScrollView">
       <div class="MainBackground">
          <img class="HeadImg" src="./img/sblizujeme2.png"/ border="2px">
-         <div class="TextView">Vítejte, u nás se můžete osobně setkat se zajímavými lidmi. Najít přátele, lásku. Stačí udělat tři kroky:</div>
+         <div class="TextView">
+            <div class="DivText"><b>Vítejte</b></br> U nás se můžete osobně setkat se zajímavými lidmi. Najít přátele, lásku. Stačí udělat tři kroky:</div>
+         </div>
          <div class="StepsBackground">
             <div class="TextViewStep" id="ShowCreateProfile">Krok 1 - Vytvoř profil</div>
             <div class="StepCreateProfile" id="CreateProfile">
                   
 
             <form class="RegistrationForm" method="post" id="profileForm">
-             <table>
+             <table class="TableProfil" >
              <tr><td colspan="2"> 
             <label  for="form-registration-form-login">Email (Login)<span>*</span></label>
-            <div id="message_post"></div>
-            </td></tr><tr><td colspan="2">
+          
             <input type="text"  maxlength="10" name="email_profile" value="" />
             </td></tr>
             <tr><td>
@@ -30,20 +31,18 @@
                 <option value="Z" >žena</option>
             </select>
             </td></tr>
-            <tr><td>
+            <tr><td colspan="2">
             <label  for="form-registration-form-password">Heslo <span>*</span> </label>
-            </td><td>
             <input type="password"  autocomplete="off" id="form-registration-form-password" name="password" value="" />
             </td></tr>
-            <tr><td>
+            <tr><td colspan="2">
             <label  for="form-registration-form-password_checker">Kontrola hesla <span>*</span> </label>
-            </td><td>
             <input type="password"  autocomplete="off" id="form-registration-form-password_checker" name="password_checker" >
             </td></tr>
-            <tr><td>
+            <tr><td colspan="2">
             <label  for="form-registration-form-phone">Mobilní číslo <span>*</span> </label>
-            </td><td><input type="text" disabled class="beforePhone" value="+420" size="4">
-            <input type="text"  name="phone" value=""size="10" /></td></tr>
+            <span >+420</span>
+            <input type="text"  name="phone" value="" size="10" /></td></tr>
             <tr><td><input type="submit"  name="submit" value="Vytvořit" id="sendProfile"/>
             </td></tr></table>
         </form> 
