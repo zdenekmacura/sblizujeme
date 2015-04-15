@@ -12,40 +12,61 @@
             <div class="DivText"><b>Vítejte</b></br> U nás se můžete osobně setkat se zajímavými lidmi. Najít přátele, lásku, partnera. Stačí udělat tři kroky:</div>
          </div>
          <div class="StepsBackground">
-            <div class="TextViewStep" id="ShowCreateProfile">Krok 1 - Vytvoř profil</div>
-            <div class="StepCreateProfile" id="CreateProfile">
+         <div class="TextViewStep" id="ShowCreateProfile">Krok 1 - Vytvoř profil</div>
+         <div class="StepCreateProfile" id="CreateProfile">
                   
 
             <form class="RegistrationForm" method="post" id="profileForm">
-             <table class="TableProfil" >
-             <tr><td colspan="2"> 
-            <label  for="form-registration-form-login">Email (Login)<span>*</span></label>
-          
-            <input type="text"  maxlength="10" name="email_profile" value="" />
+            
+            <table class="TableProfile" id="profiletable1" border="1">
+            <tr><td colspan="2" valign="middle"> 
+            <div id="email_error_message" class="ErrorMessage">error message</div>
+            <label>Email (Login) *</label>
+            <input id="emailLogin" type="text"  maxlength="50" size="30" name="email_profile" value="" />
             </td></tr>
+
             <tr><td>
+            <div id="sex_error_message" class="ErrorMessage">error message</div>
             <label  for="form-registration-form-sex">Pohlaví <span>*</span> </label>
             </td><td>
-            <select  id="form-registration-form-sex" name="data[sex]">
+            <select  id="form-registration-form-sex" name="sex">
                 <option value="0" >vyberte</option><option value="M" >muž</option>
                 <option value="Z" >žena</option>
             </select>
             </td></tr>
+
             <tr><td colspan="2">
+            <div id="password_error_message" class="ErrorMessage">error message</div>
             <label  for="form-registration-form-password">Heslo <span>*</span> </label>
-            <input type="password"  autocomplete="off" id="form-registration-form-password" name="password" value="" />
+            <input type="password" autocomplete="off" id="form-registration-form-password" name="password" value="" />
             </td></tr>
+
             <tr><td colspan="2">
             <label  for="form-registration-form-password_checker">Kontrola hesla <span>*</span> </label>
             <input type="password"  autocomplete="off" id="form-registration-form-password_checker" name="password_checker" >
             </td></tr>
+
             <tr><td colspan="2">
+            <div id="phone_error_message" class="ErrorMessage">error message</div>
             <label  for="form-registration-form-phone">Mobilní číslo <span>*</span> </label>
-            <span class="PhoneNumber"><span >+420</span>
-            <input type="text"  name="phone" value="" size="10" /></span></td></tr>
-            <tr><td colspan="2"><input type="submit"  name="submit" value="Další údaje ->" id="sendProfile"/>
-            </td></tr></table>
-        </form> 
+            <labelright class="PhoneNumber"><label>+420</label>
+            <input type="text"  name="phone" value="" maxlength="9" size="9" id="phoneNumber"/></labelright></td></tr>
+
+            <tr><td colspan="2"><input type="button"  name="nextPage" value="Další údaje ->" id="nextPageProfile1"/>
+            </td></tr>
+            </table>
+
+            <table class="TableProfile" id="profiletable2">
+            
+            <tr><td colspan="2"> 
+            <label  for="form-registration-form-login">Email (Login)<span>*</span></label>
+            <div id="email_error_message2" class="ErrorMessage">error message</div><input id="emailLogin2" type="text"  maxlength="50" size="30" name="email_profile" value="" />
+            </td></tr>
+            </table>
+
+            </form> 
+
+
 
         </div>
         </div>

@@ -172,11 +172,12 @@ body {
 
 
 }
-.TableProfil {
-	border-width: 1px;
+.TableProfile {
+	border-width: 2px;
 	border-color: black;
-	padding: 0,5em;
+	/*padding: 0,5em;*/
 	width: 100%;
+
 }
 .StepCreateProfile {
 	border: 1px solid red;
@@ -214,18 +215,55 @@ body {
 .PhoneNumber {
 	font-size: 1em;
 	float: right;
-	/*margin-right: 0.5em;
-	background-color: yellow*/
+}
+.ErrorMessage {
+	display: none;
+	color: red;
+}
+#profiletable2 {
+	display: none;
 }
 
 
 input {
 	margin-right: 0.5em;
 	float: right;
+	height: 2em;
+	font-size: 1em;
+
 }
 select {
-	margin-right: 0,5em;
+	margin-right: 0.5em;
 	float: right;
+	height: 2em;
+	font-size: 1em;
+}
+
+label {
+
+	margin-left: 0.3em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	display: inline-block;
+	padding-right: 0.3em;
+}
+
+.label
+	padding: 0em;
+	vertical-align: bottom;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+labelright {
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	display: inline-block;
+}
+td {
+	padding-left: 0.3em;
+	display: table-cell;
+    vertical-align: middle;
 }
 
 
