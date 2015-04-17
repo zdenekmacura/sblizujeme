@@ -41,23 +41,46 @@ $(document).ready(function(){
     	verifyEmail();
     });
 
+	$("#form-registration-form-password_checker").focusout(function() {
+		validatePassword();
+	});
+	$("#phoneNumber").focusout(function() {
+		validatePhoneNumber();
+	});
+
+
 	$("#phoneNumber").keyup(function () {     
   	this.value = this.value.replace(/[^0-9\.]/g,'');
 	});
 
 	$("#nextPageProfile1").click(function() {
-		validateSex();
+	
+
 		if (  (validatePassword() & validatePhoneNumber() & validateEmailNotNull() & validateSex() ) )  {
+			var h = $(".StepCreateProfile").height();
+			$(".StepCreateProfile").height(h);
 			//$("#profiletable1").animate({"margin-right": "100%"},400)
 			//$("#profiletable1").animate({"width": "0"},400)
 			//$("#profiletable1").fadeOut(500);
 			//$("#profiletable1").hide('slide', {direction: 'left'}, 1000);
-			$("#profiletable1").hide(1000);
+			$("#profiletable1").animate({ opacity: 0 },500, function(){
+					$("#profiletable1").hide();
+					$("#profiletable2").fadeIn(500, function() {
+						$('.StepCreateProfile').animate({"height": h/4}, 2000).animate({"height": "100%"});
+
+					});
+       		    }
+			);
+			//$("#profiletable1").fadeOut(2000);
 			//$("#profiletable1").hide("slide", { direction: "up" }, 1000);
 
 			//$('#profiletable1').animate({"height": "0px"}, 300);
 			//$("#profiletable1").fadeOut(300);
-			$("#profiletable2").fadeIn(2000);		//$("#profiletable2").fadeIn(500);
+			//$("#profiletable2").fadeIn(1000);
+			//$("#StepCreateProfile").animate({"height": "auto"},400);
+						//$('.StepCreateProfile').animate({"height": "100%"}, 4000);
+
+		//$("#profiletable2").fadeIn(500);
 
 //			$('.StepsBackground').animate({"width": "55%"}, 400);
 //			$('.StepsBackground').css("margin-left","auto");
